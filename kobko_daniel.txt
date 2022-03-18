@@ -1,0 +1,18 @@
+a. Do any of 1-pt, 2-pt, or uniform crossover seem to perform better than the alternatives?
+During my testing, I found that my 1-pt crossover would tend to survive longer, and evolve to
+go further, faster. Uniform crossover would take much longer to find the shape the cars would converge
+into.
+
+b. How much does mutation seem to matter, and how sensitive are things to the mutation rate?
+For single point crossover, mutation would not seem to affect the convergence that much, even at
+a 5% rate. Generally the cars would find their shape to converge to pretty fast and the mutation would
+not stray from the shape and performance of the car easily. The most helpful mutation would tend to be the third
+wheel being added for the distance, and a wheel being removed for the duration the car survived.
+
+c. Elite selection is included and has a default value of 3. If you alter this value do things 
+tend to improve, get worse etc.?
+If I would lower the elite selection value to 2, it would converge faster but, should I have gotten
+an unlucky scenario where ALL the cars performed poorly (<0.5 distance) the children would stay that
+way for much longer and it would take a long time for mutation to break away from the duplications of
+the poorly designed cars. If I raised n, scenarios like the one above would be solved much faster, as
+generally there was a much more broad selection of car types to splice together.
